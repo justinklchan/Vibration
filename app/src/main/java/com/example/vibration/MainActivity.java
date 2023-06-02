@@ -34,8 +34,8 @@ public class MainActivity extends AppCompatActivity {
         startButton.setEnabled(false);
         stopButton.setEnabled(true);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            v.vibrate(VibrationEffect.createWaveform(new long[]{60000},
-                    new int[]{Integer.parseInt(et1.getText().toString())},0));
+            v.vibrate(VibrationEffect.createWaveform(new long[]{60000,0},
+                    new int[]{Integer.parseInt(et1.getText().toString()),0},0));
         }
     }
 
